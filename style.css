@@ -1,0 +1,30 @@
+
+* {
+    font-family: sans-serif;
+  }
+  div {
+    border: 3px dashed gray;
+    background-color: lightseagreen;
+    padding: 10px;
+    margin-bottom: 20px;
+  }
+  .static {
+    position: static;
+  }
+  .relative {
+    position: relative;
+  }
+  .relative.with-content {
+    height: 120px;
+  }
+  .absolute {
+    position: absolute;
+  }
+  .absolute.move-right {
+    right: 0;
+    width: 200px;
+  }
+  .fixed {
+    position: fixed;
+    bottom: 0;
+  }

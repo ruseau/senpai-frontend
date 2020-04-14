@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>cours web position</title>
+    <style>
+    .contenedor {
+      display: flex;
+      flex-direction: row;
+      justify-content: space-between;
+      align-items: center;
+      border: 2px dashed gray;
+      background-color: lightgray;
+      padding: 10px;
+      height: 100px;
+    }
+    .item {
+      flex-basis: 200px;
+      border: 1px dashed gray;
+      background-color: #EFEFEF;
+      margin: 5px;
+      height: 50px;
+    }
+
+    @media screen and (max-width: 576) {
+        .contenedor{flex-direction: column;
+        }
+        .item{width: 100%;}
+    }
+  </style>
+</head>
+    <!--
+flexbox.buildwithreact.com
+css-tricks.com/snippets/ 
+-->
+  <body>
+<div class="contenedor">
+    <div class="item"><img src="image/logo.png" alt="" srcset="" style="height: 80px; width: 80px;"></div>
+    <div class="item">Item 2</div>
+    <div class="item">Item 3</div>
+  </div>
+    <div class="item">
+        item 1
+    </div>
+    <div class="item">
+        item 2
+    </div>
+    <div class="item">
+        item 3
+    </div>
+    <div class="contenedor">
+        <div class="item">
+            item 1
+        </div>
+        <div class="item">
+            item 2
+        </div>
+        <div class="item">
+            item 3
+        </div>
+    </div>
+</body>
+</html>
